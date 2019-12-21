@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.daffatahta.mobile2019UAS.R;
-
 public class Register extends AppCompatActivity {
 
     @Override
