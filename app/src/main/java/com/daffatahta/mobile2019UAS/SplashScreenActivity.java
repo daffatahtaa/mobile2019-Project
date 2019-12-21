@@ -6,6 +6,8 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
+import com.daffatahta.mobile2019UAS.activities.login.Login;
+
 import gr.net.maroulis.library.EasySplashScreen;
 
 public class SplashScreenActivity extends AppCompatActivity {
@@ -16,7 +18,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
         EasySplashScreen conf = new EasySplashScreen(SplashScreenActivity.this)
                 .withBackgroundColor(Color.parseColor("#000000"))
-                .withTargetActivity(MainActivity.class)
+                .withTargetActivity(Login.class)
                 .withSplashTimeOut(3000)
                 .withLogo(R.mipmap.splashlogo)
                 .withFooterText("Daffa Tahta A 1741720152")
