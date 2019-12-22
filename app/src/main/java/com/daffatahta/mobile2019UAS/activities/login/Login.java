@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.daffatahta.mobile2019UAS.MainScreen;
 import com.daffatahta.mobile2019UAS.R;
+import com.daffatahta.mobile2019UAS.activities.register.Register;
 
 public class Login extends AppCompatActivity{
 
@@ -31,7 +32,8 @@ public class Login extends AppCompatActivity{
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(Login.this, Register.class);
+                Login.this.startActivity(intent);
             }
         });
 
