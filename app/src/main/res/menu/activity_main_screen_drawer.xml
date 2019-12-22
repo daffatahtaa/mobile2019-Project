@@ -3,33 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <item android:title="Utilities">
+    <item android:title="Menu"></item>
+
+
+    <group android:checkableBehavior="single">
         <menu>
-            <group android:checkableBehavior="single">
-                <item
-                    android:id="@+id/alarm"
-                    android:icon="@drawable/alarm"
-                    android:title="@string/alarm_home"
-                    />
-                <item
-                    android:id="@+id/currency"
-                    android:icon="@drawable/currency"
-                    android:title="@string/currency_home"
-                    />
-                <item
-                    android:id="@+id/temperature"
-                    android:icon="@drawable/temperature"
-                    android:title="@string/temperature_home"/>
-                <item
-                    android:id="@+id/timer"
-                    android:icon="@drawable/timer"
-                    android:title="@string/timer_home"/>
-
-            </group>
+            <item
+                android:id="@+id/timer"
+                android:icon="@drawable/timer"
+                android:onClick="go_timer"
+                android:title="@string/timer_home" />
+            <item
+                android:id="@+id/alarm"
+                android:icon="@drawable/alarm"
+                android:onClick="go_alarm"
+                android:title="@string/alarm_home" />
+            <item
+                android:id="@+id/temperature"
+                android:icon="@drawable/temperature"
+                android:onClick="go_temperature"
+                android:title="@string/temperature_home" />
+            <item
+                android:id="@+id/currency"
+                android:icon="@drawable/currency"
+                android:onClick="go_currency"
+                android:title="@string/currency_home" />
         </menu>
-    </item>
 
-
+    </group>
     <item android:title="Other">
         <menu>
             <item

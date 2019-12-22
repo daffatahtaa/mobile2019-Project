@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.daffatahta.mobile2019UAS.MainScreen;
+import com.daffatahta.mobile2019UAS.MainActivity;
 import com.daffatahta.mobile2019UAS.R;
 import com.daffatahta.mobile2019UAS.activities.register.Register;
 
@@ -41,7 +41,7 @@ public class Login extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 Toast.makeText(Login.this,"Logged in",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(Login.this,MainScreen.class);
+                Intent intent = new Intent(Login.this, MainActivity.class);
                 Login.this.startActivity(intent);
             }
         });

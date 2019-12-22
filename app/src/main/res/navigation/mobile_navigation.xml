@@ -3,49 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
-
-    <fragment
-        android:id="@+id/nav_home"
-        android:name="com.daffatahta.mobile2019UAS.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_nav_home_to_alarm2"
-            app:destination="@id/alarm2"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.daffatahta.mobile2019UAS.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-
-    <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.daffatahta.mobile2019UAS.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
-
-    <fragment
-        android:id="@+id/nav_share"
-        android:name="com.daffatahta.mobile2019UAS.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
-
-    <fragment
-        android:id="@+id/nav_send"
-        android:name="com.daffatahta.mobile2019UAS.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+    app:startDestination="@id/alarm2">
 
     <fragment
         android:id="@+id/alarm2"
         android:name="com.daffatahta.mobile2019UAS.fragments.alarm.Alarm"
         android:label="fragment_alarm"
         tools:layout="@layout/fragment_alarm" />
+    <fragment
+        android:id="@+id/about2"
+        android:name="com.daffatahta.mobile2019UAS.fragments.about.About"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/currency2"
+        android:name="com.daffatahta.mobile2019UAS.fragments.currency.Currency"
+        android:label="fragment_currency"
+        tools:layout="@layout/fragment_currency" />
+    <fragment
+        android:id="@+id/temperature2"
+        android:name="com.daffatahta.mobile2019UAS.fragments.temperature.Temperature"
+        android:label="fragment_temperature"
+        tools:layout="@layout/fragment_temperature" />
+    <fragment
+        android:id="@+id/timer2"
+        android:name="com.daffatahta.mobile2019UAS.fragments.timer.Timer"
+        android:label="fragment_timer"
+        tools:layout="@layout/fragment_timer" />
 </navigation>

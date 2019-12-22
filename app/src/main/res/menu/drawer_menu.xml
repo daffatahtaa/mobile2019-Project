@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_alarm"
+            android:icon="@drawable/alarm"
+            android:title="Alarm" />
+        <item
+            android:id="@+id/nav_timer"
+            android:icon="@drawable/timer"
+            android:title="Timer" />
+        <item
+            android:id="@+id/nav_currency"
+            android:icon="@drawable/currency"
+            android:title="Currency" />
+        <item
+            android:id="@+id/nav_temperature"
+            android:icon="@drawable/temperature"
+            android:title="Temperature" />
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/about"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

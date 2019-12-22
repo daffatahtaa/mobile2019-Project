@@ -22,7 +22,7 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         registerButton = findViewById(R.id.regsiter_btn);
-        EmailUser = findViewById(R.id.email_user_regis);
+        EmailUser = findViewById(R.id.email_user);
         PasswordUser = findViewById(R.id.password_user_regis);
 
         registerButton.setOnClickListener(new View.OnClickListener() {
