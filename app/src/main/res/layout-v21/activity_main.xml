@@ -12,7 +12,13 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/dark"
         android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
         <Toolbar
             android:id="@+id/toolbar"
@@ -23,11 +29,32 @@
             android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             android:theme="@style/ThemeOverlay.AppCompat.Light">
 
-            <FrameLayout
-                android:id="@+id/fragment_container"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+
         </Toolbar>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quiet_streets"
+            android:text="Utility App"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quiet_streets"
+            android:text="Swipe dari kiri untuk membuka menu."
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:paddingTop="10dp"
+            android:paddingLeft="95dp"
+            />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
